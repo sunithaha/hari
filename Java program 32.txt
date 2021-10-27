@@ -1,0 +1,21 @@
+32. Write a java program to enter a number and print its reverse.
+
+	public class Example3 {
+
+
+		public static void main(String args[]) {
+			
+			Scanner s=new Scanner(System.in);
+			
+			int rev=0,num=0;
+			
+			System.out.println("Enter Number");
+			int n=s.nextInt();
+			
+			for(int i=n;i!=0;i=i/10) {
+				num=i%10;
+				rev=(rev*10)+num;
+			}
+			System.out.println("product of given number is:"+rev);
+		}
+	}

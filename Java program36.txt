@@ -1,0 +1,23 @@
+36. Write a java program to find power of a number using for loop.
+
+	public class Example3 {
+
+
+		public static void main(String args[]) {
+			
+			Scanner s=new Scanner(System.in);
+			
+			System.out.println("enter base");
+			int b=s.nextInt();
+			System.out.println("enter exponent");
+			int e=s.nextInt();
+			
+			int pow=1;
+			int expo=e;
+			while(expo!=0) {
+				pow=pow*b;
+				expo--;
+			}
+			System.out.println(b+" base to the power "+e+" is: "+pow);
+	}
+}

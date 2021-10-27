@@ -1,0 +1,20 @@
+30. Write a java program to calculate sum of digits of a number.
+
+	public class Example {
+
+	public static void main(String args[]) {
+		
+		Scanner s=new Scanner(System.in);
+		
+		int sum=0,num=0;
+		
+		System.out.println("Enter Number");
+		int n=s.nextInt();
+		
+		for(int i=n;i!=0;i=i/10) {
+			num=i%10;
+			sum=sum+num;
+		}
+		System.out.println("sum os given number is:"+sum);
+	}
+}

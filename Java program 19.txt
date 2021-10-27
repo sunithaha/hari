@@ -1,0 +1,17 @@
+19. Write a java program to print all alphabets from a to z. - using while loop
+
+	public class Example3 {
+
+	public static void main(String[] args) {
+
+		
+		Scanner s=new Scanner(System.in);
+		
+		char i='a';
+		while(i<='z') {
+			System.out.print(i+" ");
+			i++;
+		}
+
+	}
+}

@@ -1,0 +1,26 @@
+29. Write a java program to check whether a number is palindrome or not.
+
+	public class Example {
+
+	public static void main(String args[]) {
+		
+		Scanner s=new Scanner(System.in);
+		
+		int rev=0,num=0;
+		
+		System.out.println("Enter Number");
+		int n=s.nextInt();
+		
+		for(int i=n;i!=0;i=i/10) {
+			num=i%10;
+			rev=(rev*10)+num;
+		}
+		System.out.println(rev);
+		if(n==rev) {
+			System.out.println("Given number is palindrome");
+		}
+		else {
+			System.out.println("Given number is not a palindrome");
+		}
+	}
+}

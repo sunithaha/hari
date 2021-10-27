@@ -1,0 +1,23 @@
+28. Write a java program to find sum of first and last digit of a number.
+
+	public class Example {
+
+	public static void main(String args[]) {
+		
+		Scanner s=new Scanner(System.in);
+		
+		int fnum=0,lnum=0;
+		
+		System.out.println("Enter Number");
+		int n=s.nextInt();
+		
+		for(int i=n;i!=0;i=i/10) {
+			fnum=i%10;	
+		}
+		lnum=n%10;
+
+		System.out.println("First number is:"+fnum);
+		System.out.println("Last number is:"+lnum);
+		System.out.println("Sum of first and last number is:"+(lnum+fnum));
+	}
+}
